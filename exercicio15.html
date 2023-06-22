@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilos do menu principal */
+    ul.menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #333;
+    }
+
+    ul.menu li {
+      display: inline-block;
+      position: relative;
+    }
+
+    ul.menu li a {
+      display: block;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    ul.menu li:hover {
+      background-color: #555;
+    }
+
+    /* Estilos do submenu */
+    ul.submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #000000;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.menu li:hover ul.submenu {
+      display: block;
+    }
+
+    ul.submenu li {
+      display: block;
+    }
+
+    ul.submenu li a {
+      padding: 10px 20px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    ul.submenu li:hover {
+      background-color: #777;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li>
+      <a href="">Produtos</a>
+      <ul class="submenu">
+        <li><a href="">Eletrônicos</a></li>
+        <li><a href="">Roupas</a></li>
+        <li><a href="">Livros</a></li>
+      </ul>
+    </li>
+    <li>
+        <a href="">Serviços</a>
+        <ul class="submenu">
+          <li><a href="">Comida</a></li>
+          <li><a href="">Bebidas</a></li>
+          <li><a href="">Sobremesas</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="">Contatos</a>
+        <ul class="submenu">
+          <li><a href="">E-mail</a></li>
+          <li><a href="">Telefone</a></li>
+          <li><a href="">Instagram</a></li>
+        </ul>
+      </li>
+  </ul>
+</body>
+</html>
